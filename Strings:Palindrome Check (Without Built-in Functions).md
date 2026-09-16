@@ -13,8 +13,38 @@ To write a Python program to check whether the string `"google"` is a **palindro
 
 ## 🧾 Program
 
-Add code here
+```python id="r6k3wp"
+def remove(string):
+    n = int(input("Enter the index to remove: "))
+    a = ""
+
+    for i in range(len(string)):
+        if i != n:
+            a = a + string[i]
+
+    return a
+
+
+string = input("Enter a string: ")
+
+result = remove(string)
+
+print("String after removing the character:", result)
+```
+
+
+
 
 ## Output
 
+```text id="v2n8qm"
+Enter a string: Python
+Enter the index to remove: 2
+String after removing the character: Pyhon
+```
+
+
 ## Result
+
+Thus, the Python program successfully removes the character at the specified index from the given string.
+
