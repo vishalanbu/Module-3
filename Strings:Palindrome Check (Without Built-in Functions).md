@@ -13,36 +13,26 @@ To write a Python program to check whether the string `"google"` is a **palindro
 
 ## 🧾 Program
 
-```python id="r6k3wp"
-def remove(string):
-    n = int(input("Enter the index to remove: "))
-    a = ""
+```python id="k7p4mz"
+string = "google"
 
-    for i in range(len(string)):
-        if i != n:
-            a = a + string[i]
+reverse_string = string[::-1]
 
-    return a
-
-
-string = input("Enter a string: ")
-
-result = remove(string)
-
-print("String after removing the character:", result)
+if string == reverse_string:
+    print("The string is a palindrome")
+else:
+    print("The string is not a palindrome")
 ```
+
 
 
 
 
 ## Output
 
-```text id="v2n8qm"
-Enter a string: Python
-Enter the index to remove: 2
-String after removing the character: Pyhon
+```text id="n3q8vx"
+The string is not a palindrome
 ```
-
 
 ## Result
 
